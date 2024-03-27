@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  nodeapp:
+    container_name: nodejs-hello-world
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
